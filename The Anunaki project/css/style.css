@@ -1,0 +1,341 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+/* global settings: */
+html{ 
+height:100%;
+}
+
+body {
+height:100%;
+background-image:url(../img/back.jpg);
+overflow:hidden;
+background-attachment: fixed;
+}
+
+ol {
+text-align: left;
+padding: 4px;
+margin-top:-12px;
+}
+
+ul {
+font-size:90%;
+padding: 2px;
+margin: 4px;
+}
+
+h1 {
+margin-left:2%;
+font-family:helvetica;
+font-size:24px;
+}
+
+h2 {
+margin-left:3%;
+font-size:16px;
+}
+
+h3 {
+margin-left:5%;
+font-size:12px;
+}
+
+a {font-family:"Times New Roman", Times, serif;
+
+color:#fff;
+font-weight:bold;
+}
+
+
+#navbar {
+position:fixed;
+top:0px;
+left:0px;
+width:100%;
+height:15px;
+background-color:#777;
+z-index:100;
+border-bottom:solid #666 3px;
+}
+
+#sidebar {
+position: fixed;
+width: 11%;
+height: 425px;
+right: -5px;
+top: 11px;
+background-color: #000;
+z-index: 200;
+border-radius: 8px;
+border: solid #666;
+opacity: 0.75;
+
+}
+
+div#rec {
+height: 200px;
+width: 10%;
+position: fixed;
+right: 0.25%;
+top: 450px;
+background-color: #888;
+border-radius: 5px;
+opacity: 0.8;
+border: solid;
+}
+
+h2.rec {
+text-align: center;
+margin-bottom: 12px;
+border-bottom: solid 1px;
+margin-left: 0px;
+margin-top: 4px;
+padding-bottom: 2px;
+}
+
+h2.sidebar {
+color:#fff;
+margin:auto;
+font-weight:600;
+font-family: helvetica;
+font-size:18px;
+padding:5px;
+text-align:center;
+}
+
+.sidewrap {
+color:#fff;
+margin: auto;
+padding: 10px;
+font-size: 16px;
+text-align: center;
+}
+
+a.sidenav {
+display:block;
+margin-top: 3%;
+font-size:90%;
+background-color: #999;
+border-radius: 5px;
+padding:2px;
+color:#000;
+border: solid 2px #555;
+}
+
+a.sidenav:hover {
+background-color: #333;
+color:#fff;
+}
+
+#homer{
+padding-top: 0px;
+padding-bottom: 40px;
+margin-top: -10px;
+width: 50px;
+margin: auto;
+padding: 5px;
+}
+
+
+
+.arrow {
+font-size: 16px;
+}
+
+/* homepage only: */
+
+img#irish {
+position: absolute;
+top: 30px;
+right: 5%;
+width: 12%;
+border-radius: 10px;
+padding: 5px;
+background-color: #fff;
+border: solid #888;
+}
+
+em {
+font-weight:bold
+}
+
+h1.home {
+margin-top:55px;
+}
+
+h2.home {
+padding:6%;
+}
+
+#container { 
+position:absolute;
+width: 85%;
+margin-left: 3%;
+background-color: #fff;
+opacity:0.65;
+height:1500%;
+border-left: solid #888;
+border-right: solid #888;
+}
+
+#wrapper {
+position:absolute;
+width: 85%;
+margin-left: 3%;
+background-image:url(../img/stipe2.png);
+height: 100%;
+background-size: 850px;
+}
+
+#inwrap {
+height: 100%;
+position: fixed;
+background-image: url(../img/grizid.png);
+width: 85%;
+opacity: 0.8;
+background-size: 2000px;
+}
+
+pre#quote {
+position: absolute;
+left: 45%;
+top: 150px;
+background-color: #fff;
+padding: 10px;
+border-radius: 10px;
+opacity: 0.6;
+border: solid #666;
+}
+
+/* header: */
+
+#headerleft {
+margin-top:25px;
+margin-left:10%;
+z-index: 100;
+position: relative;
+top:50px;
+}
+
+#ani_but {
+padding: 10px;
+display: block;
+text-align: center;
+background-color: #FF0000;
+border-radius: 5px;
+width: 18%;
+position: relative;
+left: -1%;
+}
+
+#ani_but:hover {
+background-color:#00FF00;
+}
+
+img#headerright {
+float:right;
+margin-right:10%;
+}
+
+
+/* storyline: */
+
+.inner {
+width: 80%;
+margin-left: 5%;
+}
+
+div.storyhead {
+position: absolute;
+margin-top: 15px;
+width: 95%;
+border-top: solid;
+left: 3px;
+border-bottom: solid;
+padding: 0px;
+}
+
+h1.storyhead {
+float: left;
+padding-top: 55px;
+width: 30%;
+}
+
+img.storyhead {
+width: 55%;
+padding: 0px;
+margin-bottom: 0px;
+border-right: solid 5px;
+position: absolute;
+right: 0px;
+}
+
+div.left {
+padding-top: 160px;
+width: 42%;
+}
+
+h2#story2 {
+width: 50%;
+position: absolute;
+left: 40%;
+top: 450px;
+}
+
+#story1 {
+position:absolute;
+width: 85%;
+margin-left: 3%;
+background-image: url(../img/stipe2.png);
+background-size: 550px;
+top:800px;
+height: 100%;
+padding: 20px;
+}
+
+#story2 {
+position:absolute;
+width: 85%;
+margin-left: 3%;
+background-image: url(../img/stipe2.png);
+background-size: 250px;
+height: 100%;
+padding: 20px;
+top:1500px;
+}
+
+#story3 {
+position:absolute;
+width: 85%;
+margin-left: 3%;
+background-image: url(../img/stipe2.png);
+background-size: 250px;
+height: 100%;
+padding: 20px;
+top:2300px;
+}
+
+#story4 {
+position:absolute;
+width: 85%;
+margin-left: 3%;
+background-image: url(../img/stipe2.png);
+background-size: 250px;
+height: 100%;
+padding: 20px;
+top:3100px;
+}
+
+#story5 {
+position:absolute;
+width: 85%;
+margin-left: 3%;
+background-image: url(../img/stipe2.png);
+background-size: 250px;
+height: 100%;
+padding: 20px;
+top:4000px;
+}

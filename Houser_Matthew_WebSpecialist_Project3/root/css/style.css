@@ -1,0 +1,43 @@
+* { padding: 0; margin: 0; }
+header { background: #DF4700; padding: 25px; }
+header h1 { margin-left: 1%; }
+nav { background: #888; }
+nav li { float: left; width: 20%; list-style: none; text-align: center; padding: 20px 0; cursor: pointer; outline: solid 2px #000; }
+nav li:nth-child(1) { background: #0cc20c; }
+nav li:nth-child(2) { background: #0C80C2; }
+nav li:nth-child(3) { background: #CECE14; }
+nav li:nth-child(4) { background: #790CC2; }
+nav li:nth-child(5)  { background: #DA0A0A; }
+
+.horizontal{ width: 528px; height: 352px; float: left; background: #333; border-radius: 25px; margin-left: 3%; margin-top: 7%; }
+.vertical{ width: 352px; height: 528px; float: left; background: #333; border-radius: 25px; margin: 2%; }
+.vertical .inner { margin: 5% auto; }
+.horizontal .inner { margin: 4% auto; }
+.inner { width: 90%; height: 90%; background: #fff; border-radius: 10px }
+
+iframe { height: 100%; border: none; }
+.vertical iframe { width: 100%; }
+.horizontal iframe { width: 101%; }
+
+.sidebar { float: right; margin: 2%; width: 50%; background: #888; margin-top: 120px;
+	 padding: 10px 0; border-radius: 10px; }
+.sidebar input { padding: 10px; width: 25%; margin-left: 2%; float: left; }
+.sidebar h2 { float: right; margin-right: 5%; }
+.sidebar p { text-align: left; clear: both; padding: 2%; position: relative; top: 10px }
+
+@media only screen and (max-width: 1250px) {
+
+.sidebar { width: 80%; float: none; margin: 100px auto 0 auto; }
+.sidebar p { text-align: center; }
+.sidebar h2 { text-align: center; margin-right: 0; float: none; }
+ .vertical, .horizontal { float: none; margin: 2% auto; } 
+ .inner { position: relative; top: 15px; }
+ nav li { min-height: 50px; }
+}
+
+@media only screen and (max-width: 600px) {
+nav li { min-height: 0px; width: 100%; padding: 5px 0; }
+.sidebar { position: relative; top: 100px; }
+.vertical, .horizontal { position: relative; top: 140px; }
+.sidebar input { width: 47%; margin-bottom: 25px; }
+}

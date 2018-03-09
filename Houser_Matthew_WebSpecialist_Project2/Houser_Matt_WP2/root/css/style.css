@@ -1,0 +1,251 @@
+
+/* reset and main styles */
+
+* { margin:0; padding: 0; }
+body { background: #C5C5C5; }
+.main { width: 100%; }
+img { height: 100%; width: 100%; }
+button { outline: none; }
+#innerWrap { display: inline-block; width: 85%; height: 100%; position: relative; }
+
+/* homescreen styles */
+
+#fourUp { display: inline-block; }
+.row1 { height: 46%; margin: 2% auto; position: relative; width: 98%; }
+.row2 { height: 48%; position: relative; width: 98%; margin: auto; }
+.four { width: 48%; height: 100%; border-radius: 10px; border: solid 1px #000; }
+.four:nth-child(1), .four:nth-child(3) { display: inline-block; position: absolute; }
+.four:nth-child(2), .four:nth-child(4) { display: inline-block; position: absolute; right: 0px; }
+
+
+.row1 .four:nth-child(1) { background: #00eb00; background-image: url(../img/HTML5.png); background-size: auto 95%; 
+	background-repeat: no-repeat; background-position: center; }
+.row1 .four:nth-child(2) { background: red; background-image: url(../img/jQuery.png); background-size: auto 95%; 
+	background-repeat: no-repeat; background-position: center; }
+.row2 .four { background: yellow; background-image: url(../img/dots.png); background-size: 50px; cursor: pointer; }
+.row2 .four section { background: rgba(255, 255, 255, 0.36); width: 90%; height: 100%; margin: auto; border-left: solid 1px #000; 
+	border-right: solid 1px #000; }
+.row2 section > h2 { margin: 0 5% 5% 5%; padding-top: 10%; text-align: center; }
+.row2 .four p { width: 90%; margin: auto; }
+.row2 .four > section > span { float: right; margin: 5% 5% 0 0; color: #005cff; font-size: 16px; }
+
+#bar { display: inline-block; right: 0px; max-height: 800px; }
+.barInner { width: 90%; height: 97%; margin: 1% auto; background: #005cff; border-radius: 10px; border: solid 1px #000; background-image: url(../img/dots.png); 
+	background-size: 50px; overflow: hidden; }
+.barInner h2 { margin-top: 15px; }
+.barInner .textWrap { color: #fff; }
+.barInner .textWrap h3 { margin-top: 15px; text-align: center; }
+.barInner .textWrap h4:nth-child(2) { margin-bottom: 20px; }
+	
+.textWrap { width: 90%; margin: auto; height: 100%; overflow-y: scroll; padding: 0 5%; }
+.textWrap h2 { text-align: center; }
+.textWrap p { margin-top: 10px; }
+
+.arrowBlock { display: inline-block; width: 15%; height: 98%; margin-top: 0.5%; position: absolute; right: 0px; }
+.arrowRight { height: 63%; margin-bottom: 2%; background: #fff; background-image: url(../img/arrow.svg); background-size: contain; background-repeat: no-repeat;
+	background-position: 50%; border: solid 1px #000; border-radius: 10px; }
+#arrowDown { height: 35%; background: #fff; background-image: url(../img/arrow_down.svg); background-size: contain; background-repeat: no-repeat; 
+	background-position: 50%; border: solid 1px #000; border-radius: 10px; }
+.arrowBlock h3 { text-align: center; margin-top: 5%; }
+.arrowBlock > section { cursor: pointer; }
+
+/* home dialogue styles */
+
+.ui-dialog { z-index: 50; padding: 1% 2%; margin-left: 3%; background: rgba(255, 255, 255, 0.9); border: double 4px #005cff; overflow-y: scroll; }
+.mainDialogue ol li { margin-top: 10px; } 
+.mainDialogue ol { margin: 2%; }
+.mainDialogue { padding: 3% 2%; max-width: 1000px; margin: auto; border: double 3px #005cff; border-radius: 10px; color: #000; background: rgba(210, 221, 255, 0.57); }
+.mainDialogue:nth-child(2) { padding: 1% 2%; max-width: 1000px; margin: 1% auto 0 auto; }
+.mainDialogue ol > li { margin-bottom: 5%; padding: 2%; background: rgba(255, 255, 255, 0.64); display: inline-block; 
+	border: solid 1px #999; border-radius: 20px; }
+#teams .mainDialogue ol > li { width: 70%; }
+#framing .mainDialogue ol > li { width: 95%; }
+.mainDialogue ol li ul { margin: 0 0 2% 5%; }
+.mainDialogue ol img { width: 20%; height: auto; float: right; display: inline-block; vertical-align: top; margin: 5% 0 0 3%; }
+
+.mainDialogue:nth-child(2) li { display: inline-block; position: relative; vertical-align: top; width: 16%; text-align: center; padding: 2%; margin: 2%; border-radius: 20px; 
+	border: dashed 1px #000; color: #000; font-family: Arial, sans-serif; font-weight: bold; font-size: 14px; line-height: 22px; }
+
+.mainDialogue:nth-child(2) li:nth-child(1) { background: #f00; }
+.mainDialogue:nth-child(2) li:nth-child(2) { background: #00eb00;; }
+.mainDialogue:nth-child(2) li:nth-child(3) { background: #005cff; }
+.mainDialogue:nth-child(2) li:nth-child(4) { background: #ff0; }
+.mainDialogue:nth-child(2) li:after { content: ''; background-image: url(../img/arrow_rt.svg); background-size: 100%; 
+	display: inline-block; width: 15px; height: 15px; position: absolute; left: 107%; top: 40%; }
+.mainDialogue:nth-child(2) li:last-child:after { display: none; }
+.fieldset { position: relative; }
+
+#teams .mainDialogue { padding: 3% 4%; }
+section.fifty { width: 48%; float: left; margin: 1%; }
+section.fifty h2 { text-align: center; }
+#teams .mainDialogue ol li h4 { margin: 2% 0; text-align: center; } 
+#teams .mainDialogue ol li h4 + p { margin: 4%; font-style: oblique; }
+
+.ui-dialog-titlebar-close { background: url(../img/x.svg); background-color: #000; background-size: 100%; color: transparent; 
+	height: 40px; width: 40px; border-radius: 50%; position: absolute; left: 10px; top: 10px; cursor: pointer; }
+
+/* challengers screen styles */
+
+#arrowUp { height: 35%; background: #fff; background-size: contain; background-repeat: no-repeat; 
+	background-position: 50%; border: solid 1px #000; border-radius: 10px; }
+#arrowUp { background-image: url(../img/arrow_up.svg); }
+#challengers { width: 75%; height: 80%; display: inline-block; margin: 2% 4%; padding: 1%; border: double 4px #005cff; border-radius: 20px; 
+	background: #00eb00; overflow: hidden; }
+.scrollInner { height: 102%; overflow-y: scroll; }
+#challengers .scrollInner > h2 { margin: 0 2%; border: solid 2px #005cff; border-top: none; padding: 10px; background: #ff0; cursor: pointer; }
+#challengers .scrollInner > h2:first-of-type { border: solid 2px #005cff; border-radius: 10px 10px 0 0; }
+#challengers .ignore { border-radius: 0 0 10px 10px; }
+.challenger { margin: 0 2%; padding: 1%; background: #005cff; }
+#challengers .scrollInner > h2:nth-of-type(4) { display: none !important; }
+.challenger .fifty { text-align: center; }
+.challenger .fifty h3 { margin-bottom: 20px; color: #fff; }
+.challenger img { width: 40%; max-width: 150px; height: 40%; max-height: 150px; border-radius: 10%; cursor: pointer; }
+.spacer { height: 10px; }
+
+/* showdown screen styles */
+
+#results { height: 98%; width: 82%; display: inline-block; float: right; }
+#results + .arrowBlock { left: 0px; }
+#arrowLeft { height: 63%; margin-bottom: 2%; background: #fff; background-image: url(../img/arrow_left.svg); background-size: contain; background-repeat: no-repeat;
+	background-position: 50%; border: solid 1px #000; border-radius: 10px; }
+.results { border-radius: 20px; position: relative; overflow: hidden; border: solid 1px #222; }
+.results:nth-child(1){ background: #f00; }
+.results:nth-child(2){ background: #00eb00; }
+.results:nth-child(3){ background: #005cff; }
+.results:nth-child(4){ background: #ff0; }
+.results h3 { text-align: center; font-size: 18px; padding: 5px; border-bottom: solid 1px #333; }
+
+.levels { width: 45%; display: inline-block; position: relative; }
+.levels:nth-child(3) { border-left: solid 1px #333; } 
+.levels:nth-child(2) { border-right: solid 1px #333; }
+.levels > h4 { text-align: center; margin-top: 10px; }
+.levels:first-child { float: left; }
+.levels:last-child { float: right; }
+.level { width: 20%; height: 2%; margin-left: 2%; background: #fff; position: absolute; bottom: 0; border-radius: 4px 4px 0 0; border: solid 1px #222; }
+.level:nth-child(2) { left: 2%; }
+.level:nth-child(3) { left: 24%; }
+.level:nth-child(4) { left: 46%; }
+.level:nth-child(5) { left: 68%; }
+.level p { text-align: center; font-size: 12px; }
+
+.level span { position: absolute; font-family: arial; font-size: 12px; -webkit-transform: rotate(270deg); -moz-transform: rotate(270deg); -ms-transform: rotate(270deg); -o-transform: rotate(270deg); transform: rotate(270deg); }
+
+/* final tally dialogue styles */
+
+#final { height: 35%; background: #fff; background-image: url(../img/checkbox.svg); background-size: 90% 90%; background-repeat: no-repeat; 
+	background-position: 50% 100%; margin-bottom: 2%; border: solid 1px #000; border-radius: 10px; }
+#tally ul { list-style: square; padding: 5%; } 
+#tally li { margin: 42px 2%; position: relative; border-bottom: solid 1px #888; }
+#tally li p { position: absolute; top: -20px; right: 0px; background: #fff; text-align: center; padding: 5px; border: solid 2px #888; border-radius: 10px; }
+#tally li span { display: inline-block; width: 100%; }
+#tally li span:first-child { font-size: 12px; margin-bottom: 5px; }
+#tally li span:last-child { font-weight: bold; }
+
+#tally h3 { position: relative; margin: 2% 7% 20px 3%; padding-left: 3px; border-bottom: solid 1px #333; border-top: solid 1px #333; border-left: solid 3px #333; }
+#tally h3 span:first-of-type { margin-left: 5%; text-decoration: underline; }
+#tally h3 span:last-child { padding: 10px; position: absolute; right: -1%; background: #f00; border-radius: 10px; border: solid 2px #333; top: -7px; color: #fff; }
+
+
+/* orientation query styles */
+
+@media only screen and (orientation : landscape) { 
+
+#fourUp { width: 50%; height: 98%; position: absolute; max-height: 450px; }
+#bar { width: 50%; height: 100%; position: absolute; max-height: 800px; }
+#results { padding-top: 0.5%; }
+.results { width: 49%; display: inline-block; height: 49%; }
+
+}
+
+@media only screen and (orientation : portrait) { 
+
+#fourUp { width: 100%; height: 50%; position: relative; }
+#bar { width: 100%; height: 48%; position: relative; top: 1%; }
+#results { margin-top: 0.5%; }
+
+.results { width: 98%; height: 24%; margin: 0.5% auto 0 auto; }
+}	
+
+@media only screen and (orientation : portrait) and (max-height: 1000px) { 
+
+.level span { display: none; }
+
+}
+
+@media only screen and (orientation : landscape) and (max-width: 850px) {
+
+.level span { display: none; }
+
+}
+
+/* viewport query styles */
+
+@media only screen and (max-width: 1050px) {
+
+#teams section.fifty { width: 99%; }
+
+}
+
+	
+@media only screen and (max-width: 850px) {
+
+.ui-dialog-titlebar-close { height: 35px; width: 35px; left: 5px; top: 7px; }
+#innerWrap { width: 100%; height: 80%; }
+.arrowBlock { width: 100%; height: 20%; bottom: -5px;}
+.arrowBlock > section { background-position: 80%; }
+.arrowBlock h3 { float: left; margin-left: 5%; }
+.arrowRight, #arrowLeft { height: 90%; width: 50%; margin: 0; position: absolute; }
+.arrowRight { right: 0px; }
+#arrowLeft { left: 0px; }
+#arrowDown { height: 90%; width: 49%; position: absolute; left: 0px; background-position: 90% 100%; }
+#arrowUp, #final { height: 90%; width: 49%; position: absolute; }
+#arrowUp { left: 0px; background-position: 90% 100%; }
+#final { right: 0px; background-position: 200% 100%; }
+.row2 .four p { display: none; }
+.row2 .four > section > span { position: absolute; right: 5%; bottom: 25%; font-size: 14px; }
+
+.mainDialogue:nth-child(2) li { display: block; width: 70%; margin: 2% auto 25px auto; }
+.mainDialogue:nth-child(2) li:after { position: absolute; left: 50%; top: 110%; -webkit-transform: rotate(90deg); -moz-transform: rotate(90deg); 
+	-ms-transform: rotate(90deg); -o-transform: rotate(90deg); transform: rotate(90deg); }
+
+#challengers { width: 90%; height: 65%; }
+.challenger section.fifty { width: 99%; }
+#results { height: 77%; width: 98%; margin-right: 1%; }
+
+#tally section.fifty { width: 100%; }
+}
+
+@media only screen and (max-width: 700px) {
+.mainDialogue { padding: 4% 2%; }
+.arrowBlock h3 { margin-left: 2%; position: absolute; bottom: 0px; }
+.arrowBlock > section { background-position: 90%; }
+#teams .mainDialogue ol > li { width: 95%; margin: 0 5% 15% 0; }
+.mainDialogue ol img { float: none; position: absolute; height: auto; right: 4%; margin-top: -40px; }
+.row2 .four > section > span { position: absolute; right: 5%; bottom: 5%; font-size: 12px; }
+#challengers { width: 88%; }
+.level p { font-size: 10px; }
+}
+
+@media only screen and (max-width: 500px) {
+.mainDialogue h3 { font-size: 18px; }
+.mainDialogue { padding: 5% 2%; }
+.arrowBlock h3 { margin-left: 2px; font-size: 16px; }
+.arrowBlock > section { background-position: 100%; }
+.results h3 { font-size: 14px; }
+.level p { font-size: 8px; }
+}
+
+@media only screen and (max-width: 400px) {
+.mainDialogue { padding: 7% 2%; }
+.mainDialogue ul { list-style: none; }
+#teams .mainDialogue { padding: 5% 4%; }
+#tally li h4 { font-size: 12px; }
+}
+
+@media only screen and (max-height: 450px) {
+
+.row2 .four p { display: none; }
+.row2 .four > section > span { position: absolute; right: 5%; bottom: 5%; font-size: 12px; }
+.level span { display: none; }
+
+}
